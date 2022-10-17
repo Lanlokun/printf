@@ -1,6 +1,8 @@
 #include <stdarg.h>
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
+
+
 
 int _printf(const char *format, ...){
   int count = 0, i;
@@ -44,7 +46,7 @@ int _printf(const char *format, ...){
             count += print_unsigned(va_arg(data, unsigned int));
             break;
         default:
-            break;
+             break;
       }
       
       i += 2;

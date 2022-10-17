@@ -13,10 +13,10 @@ int print_decimal(int value){
     the remaining digits using recursion, then print
     the last digit
  */
-    if (value/10)
+    if (value / 10)
         count += print_decimal(value/10);
   
-    count += _putchar(value%10 + '0');
+    count += _putchar(value % 10 + '0');
 
     return (count);
 }
